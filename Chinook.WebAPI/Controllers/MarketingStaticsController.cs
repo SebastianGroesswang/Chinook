@@ -11,25 +11,25 @@ namespace Chinook.WebAPI.Controllers
     [ApiController]
     public class MarketingStaticsController : ControllerBase
     {
-        [HttpGet("api/[controller]/AlbumTimeStatistic")]
+        [HttpGet("/api/[controller]/AlbumTimeStatistic")]
         public Contracts.Report.Marketing.IAlbumTimeStatistic AlbumTime()
         {
             return Report.MarketingReports.GetAlbumTimeStatistic();
         }
 
-        [HttpGet("api/[controller]/CostumerSaleStatistic")]
+        [HttpGet("/api/[controller]/CostumerSaleStatistic")]
         public Contracts.Report.Marketing.ICostumerSaleStatistic CostumerSale()
         {
             return Report.MarketingReports.GetCostumerSaleStatistic();
         }
 
-        [HttpGet("api/[controller]/TrackSaleStatistic")]
+        [HttpGet("/api/[controller]/TrackSaleStatistic")]
         public Contracts.Report.Marketing.ITrackSaleStatistic TrackSale()
         {
             return Report.MarketingReports.GetTrackSaleStatistic();
         }
 
-        [HttpGet("api/[controller]/TrackTimeStatistic")]
+        [HttpGet("/api/[controller]/TrackTimeStatistic")]
         public Contracts.Report.Marketing.ITrackTimeStatistic TrackTime()
         {
             return Report.MarketingReports.GetTrackTimeStatistic();
